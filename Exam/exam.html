@@ -1,0 +1,80 @@
+<head>
+   
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="exam.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    
+    <div class="container" id="app">
+        <form>
+            <input v-model="newtitle">
+            <button v-on:click="newkitty1">
+            TITLE
+            </button>
+           
+            <button v-on:click="newkitty2">
+            AUTHOR
+            </button>
+            <input v-model="newauthor">
+           
+            <button v-on:click="newkitty3">
+            PUBLISHER
+            </button>
+            <input v-model="newpublisher">
+           
+            <button v-on:click="newkitty4">
+            AMAZONE
+            </button>
+            <input v-model="newamazone">
+        </form>
+        <table class="table table-bordered">
+        <thead>
+          <tr>
+           <th scope="col">TITLE</th>
+            <th scope="col">AUTHOR</th>
+            <th scope="col">PUBLISHER</th>
+            <th scope="col">AMAZONE</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            
+            <td v-for="book in books">{{book.title}}> </td>
+            <td>ESPING ANDERSON</td>
+            <td>SNS</td>
+            <td>aderson@publisher,com</td>
+          </tr>
+          <tr>
+            <td>FAMILY IN 25TH CENTURY</td>
+            <td>ESPING ANDERSON</td>
+            <td>SNS</td>
+            <td>aderson@publisher,com</td>
+          </tr>
+          <tr>
+           
+            <td>FAMILY IN 25TH CENTURY</td>
+            <td>ESPING ANDERSON</td>
+            <td>SNS</td>
+            <td>aderson@publisher,com</td>>
+          </tr>
+          <tr>
+           
+            <td>FAMILY IN 25TH CENTURY</td>
+            <td>ESPING ANDERSON</td>
+            <td>SNS</td>
+            <td>aderson@publisher,com</td>>
+          </tr>
+        </tbody>
+      </table>
+</div>
+   
+    <script src="exam.js"></script>
+
+</body>
+
+</html>
